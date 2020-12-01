@@ -19,8 +19,8 @@ const Calculator = {
   divide: (function (a,b) { return a / b; })
 };
 
-function actionApplyer(int, funcArray) {
-  let arg = int;
+function actionApplyer(num, funcArray) {
+  let arg = num;
   for (const func of funcArray) {
     const result = func(arg);
     arg = result;
